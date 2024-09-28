@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Walmart AutoFiller</title>
+  </head>
+
+  <body>
+    <h3>Walmrt Employment Sponsorship Questionnaire</h3>
+    <br /><br />
+
+    <form id="walmartForm">
+      <label>
+        First name:
+        <input type="text" id="firstName" name="firstName" />
+      </label>
+      <br /><br />
+
+      <label>
+        Last name:
+        <input type="text" id="lastName" name="lastName" />
+      </label>
+      <br /><br />
+
+      <label>
+        E-mail Address:
+        <input type="text" id="email" name="email" />
+      </label>
+      <br /><br />
+
+      <label>
+        What is your country of birth?
+        <input type="text" id="birthCountry" name="birthCountry" />
+      </label>
+      <br /><br />
+
+      <label>
+        In what country do you currently reside?
+        <input type="text" id="residingCountry" name="residingCountry" />
+      </label>
+      <br /><br />
+
+      <label>
+        What is your country(ies) of citizenship?
+        <input type="text" id="citizenshipCountry" name="citizenshipCountry" />
+      </label>
+      <br /><br />
+
+      <label>
+        Do you have a degree from a university, college, or vocational school
+        <select name="degree" id="degree">
+          <option value="" disabled selected>Select One</option>
+          <option value="Yes">Yes</option>
+          <option value="No">No</option>
+        </select>
+      </label>
+      <br /><br />
+
+      <label>
+        If Yes, what was your field of study?
+        <input type="text" id="fieldOfStudy" name="fieldOfStudy" />
+      </label>
+      <br /><br />
+
+      <label>
+        What is your highest level of degree attained?
+        <input type="text" id="highestDegree" name="highestDegree" />
+      </label>
+      <br /><br />
+
+      <label>
+        Do you currently hold an EAD card?
+        <select name="eadCard" id="eadCard">
+          <option value="" disabled selected>Select One</option>
+          <option value="Yes">Yes</option>
+          <option value="No">No</option>
+        </select>
+      </label>
+      <br /><br />
+
+      <label> EAD Card expiration date:</label>
+      <input
+        type="date"
+        id="eadExpirationDate"
+        name="eadExpirationDate"
+        placeholder="MM/DD/YYYY"
+      />
+      <br /><br />
+
+      <label>
+        Select your EAD type
+        <select name="eadType" id="eadType">
+          <option value="" disabled selected>Select One</option>
+          <option value="F-1 OPT">F-1 OPT</option>
+          <option value="AOS Applicant">AOS Applicant</option>
+          <option value="F-1 STEM OPT">F-1 STEM OPT</option>
+          <option value="TPS or Asylee">TPS or Asylee</option>
+          <option value="U4U">U4U</option>
+        </select>
+      </label>
+      <br /><br />
+
+      <label>
+        Please provide the following information on your current status: Visa
+        Status type or work authorization status: Select all that apply. </label
+      ><br />
+      <div>
+        <input
+          type="checkbox"
+          name="visaOptions"
+          value="H-1"
+          id="H-1"
+        />H-1<br />
+        <input
+          type="checkbox"
+          name="visaOptions"
+          value="F-1"
+          id="F-1"
+        />F-1<br />
+        <input
+          type="checkbox"
+          name="visaOptions"
+          value="L-1"
+          id="L-1"
+        />L-1<br />
+        <input
+          type="checkbox"
+          name="visaOptions"
+          value="L-2S"
+          id="L-2S"
+        />L-2S<br />
+        <input
+          type="checkbox"
+          name="visaOptions"
+          value="H-4"
+          id="H-4"
+        />H-4<br />
+        <input
+          type="checkbox"
+          name="visaOptions"
+          value="E-3"
+          id="E-3"
+        />E-3<br />
+        <input type="checkbox" name="visaOptions" value="TN" id="TN" />TN<br />
+        <input
+          type="checkbox"
+          name="visaOptions"
+          value="O-1"
+          id="O-1"
+        />O-1<br />
+        <input
+          type="checkbox"
+          name="visaOptions"
+          value="H-1B1"
+          id="H-1B1"
+        />H-1B1<br />
+        <input
+          type="checkbox"
+          name="visaOptions"
+          value="AOS Applicant"
+          id="AOS Applicant"
+        />AOS Applicant<br /><br />
+      </div>
+
+      <label> Expiration date of your current status: </label>
+      <input
+        type="date"
+        id="visaExpirationDate"
+        name="visaExpirationDate"
+        placeholder="MM/DD/YYYY"
+      />
+      <br /><br />
+
+      <label>
+        If you have an H-1B visa, is it CAP exempt? How do I know if I'm CAP
+        Exempt: If you obtained your H-1B through a University or related
+        non-profit entity, non-profit or government research organization
+        without being subject to the H-1B lottery, your visa is likely CAP
+        exempt. Please confirm with your employer, as your H-1B would not be
+        transferrable.
+        <select name="h-1CapExempt" id="h-1CapExempt">
+          <option value="" disabled selected>Select One</option>
+          <option value="Yes">Yes</option>
+          <option value="No">No</option>
+        </select>
+      </label>
+      <br /><br />
+
+      <label>
+        Additional details surrounding U.S. work authorization:
+        <input
+          type="text"
+          id="USWorkAuthorization"
+          name="USWorkAuthorization"
+        />
+      </label>
+      <br /><br />
+
+      <label>
+        Have you previously held H1-B status in the last 6 years?
+        <select name="previouslyH1B" id="previouslyH1B">
+          <option value="" disabled selected>Select One</option>
+          <option value="Yes">Yes</option>
+          <option value="No">No</option>
+        </select>
+      </label>
+      <br /><br />
+
+      <label>
+        Total time spent in H1-B status in the last 6 years?
+        <input type="text" id="timeSpentH1B" name="timeSpentH1B" />
+      </label>
+      <br /><br />
+
+      <label>
+        Have you been in L-1 status?
+        <select name="l-1Status" id="l-1Status">
+          <option value="" disabled selected>Select One</option>
+          <option value="Yes">Yes</option>
+          <option value="No">No</option>
+        </select>
+      </label>
+      <br /><br />
+
+      <label>
+        Are you currently employed?
+        <select name="currentEmployed" id="currentEmployed">
+          <option value="" disabled selected>Select One</option>
+          <option value="Yes">Yes</option>
+          <option value="No">No</option>
+        </select>
+      </label>
+      <br /><br />
+
+      <label>
+        Has your previous employer filed an I-140 or immigrant petition on your
+        behalf?
+        <select name="i-140" id="i-140">
+          <option value="" disabled selected>Select One</option>
+          <option value="Yes">Yes</option>
+          <option value="No">No</option>
+        </select>
+      </label>
+      <br /><br />
+
+      <label>
+        Has an I-485 or Adjustment of Status application been filed on your
+        behalf?
+        <select name="i-485" id="i-485">
+          <option value="" disabled selected>Select One</option>
+          <option value="Yes">Yes</option>
+          <option value="No">No</option>
+        </select>
+      </label>
+      <br /><br />
+
+      <label>
+        Have you previously held J-1 status?
+        <select name="j-1" id="j-1">
+          <option value="" disabled selected>Select One</option>
+          <option value="Yes">Yes</option>
+          <option value="No">No</option>
+        </select>
+      </label>
+      <br /><br />
+
+      <button type="submit">Submit</button>
+    </form>
+    <p id="statusMessage" style="color: red"></p>
+    <button type="submit" id="goToHomepage">Go to Homepage</button>
+    <script type="module" src="/controller/saveFormData.js"></script>
+    <script type="module" src="/controller/autoFill.js"></script>
+    <script type="module" src="/model/walmartFormDataModel.js"></script>
+  </body>
+</html>
