@@ -1,0 +1,22 @@
+{
+  "manifest_version": 3,
+  "name": "Walmart AutoFiller",
+  "description": "This Chrome extension helps autofill the Walmart Job Application(Employment Sponsorship Questionnaire)",
+  "version": "1.0",
+  "author": "Chiranjeevi Gorantla",
+  "action": {
+    "default_popup": "index.html"
+  },
+  "permissions": ["storage", "activeTab"],
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": [
+        "/controller/homepage.js",
+        "/model/walmartFormDataModel.js",
+        "/controller/saveFormData.js",
+        "/controller/autofill.js"
+      ]
+    }
+  ]
+}
